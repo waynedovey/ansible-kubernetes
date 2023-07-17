@@ -28,6 +28,10 @@ This might be required for command line CentOS/RHEL8 Distros
 pip3.8 install boto3
 ```
 
+```bash
+pip3.8 install kubernetes
+```
+
 ### Ansible Collections
 
 We will also need the Ansible [Amazon AWS Collection](https://github.com/ansible-collections/amazon.aws#amazon-aws-collection).
