@@ -10,6 +10,12 @@ As we will interact with AWS, we need a couple of Python libraries to be present
 pip install --user -r requirements_eks.txt
 ```
 
+This might be required for command line CentOS/RHEL8 Distros 
+
+```bash
+pip3.8  install boto3
+```
+
 ### Ansible Collections
 
 We will also need the Ansible [Amazon AWS Collection](https://github.com/ansible-collections/amazon.aws#amazon-aws-collection).
