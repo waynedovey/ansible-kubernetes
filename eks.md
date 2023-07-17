@@ -13,7 +13,7 @@ pip install --user -r requirements_eks.txt
 This might be required for command line CentOS/RHEL8 Distros 
 
 ```bash
-pip3.8  install boto3
+pip3.8 install boto3
 ```
 
 ### Ansible Collections
