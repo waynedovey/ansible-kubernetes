@@ -7,6 +7,14 @@
 As we will interact with Azure, we need a couple of Python libraries to be present in the system.
 
 ```bash
+pip3 install setuptools-rust
+```
+
+```bash
+pip3 install --upgrade pip
+```
+
+```bash
 pip install --user -r requirements_aks.txt
 ```
 
