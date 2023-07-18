@@ -15,6 +15,10 @@ pip3 install --upgrade pip
 ```
 
 ```bash
+pip3.8  install packaging
+```
+
+```bash
 pip install --user -r requirements_aks.txt
 ```
 
