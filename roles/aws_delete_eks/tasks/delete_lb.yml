@@ -1,16 +1,16 @@
 # This LB is created automatically by EKS
 # ec2_elb_info is the only module that requires boto
-- name: Gather information about all Load Balancers
-  community.aws.ec2_elb_info:
-    region: "{{ aws_region }}"
-  register: elb_info
-
-- name: Delete Load Balancers in VPC {{ all_vpcs.vpcs[0].vpc_id }}
-  amazon.aws.ec2_elb_lb:
-    name: "{{ item.name }}"
-    region: "{{ aws_region }}"
-    state: absent
-    wait: yes
-    wait_timeout: 120
-  loop: "{{ elb_info.elbs }}"
-  when: item.vpc_id ==  all_vpcs.vpcs[0].vpc_id
+#- name: Gather information about all Load Balancers
+#  community.aws.ec2_elb_info:
+#    region: "{{ aws_region }}"
+#  register: elb_info
+#
+#- name: Delete Load Balancers in VPC {{ all_vpcs.vpcs[0].vpc_id }}
+#  amazon.aws.ec2_elb_lb:
+#    name: "{{ item.name }}"
+#    region: "{{ aws_region }}"
+#    state: absent
+#    wait: yes
+#    wait_timeout: 120
+#  loop: "{{ elb_info.elbs }}"
+#  when: item.vpc_id ==  all_vpcs.vpcs[0].vpc_id
